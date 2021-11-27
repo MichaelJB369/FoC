@@ -29,7 +29,7 @@
 <script>
 function HexToBin() {
   var x = document.getElementById("inputHex").value;
-  var binOut = parseInt(x , 16);
+  var binOut = (parseInt(x , 16).toString(2)).padStart(4, '0');
   document.getElementById("demo").innerHTML = binOut;
   }
 </script>
