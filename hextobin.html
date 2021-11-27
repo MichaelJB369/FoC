@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body>
+<section>
+<div>
+<h3>Hexidecimal to Binary Conversion</h3>
+	 <p><img src="hextobin.jpg" width="400" height="300"></p>
+	 <p>Enter any hex 0-9 and A-F: </p>
+<p><input type="" id="inputHex" value=""></p>
+<button onclick="HexToBin()">Convert</button>
+<p></p>
+<p>The binary value is : </p>
+<p id="demo" "=""></p>
+</div>
+</section>
+
+<script>
+function HexToBin() {
+  var x = document.getElementById("inputHex").value;
+  var binOut = parseInt(x , 16);
+  document.getElementById("demo").innerHTML = binOut;
+  }
+</script>
+</body>
+</html>
+
